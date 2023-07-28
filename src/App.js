@@ -9,14 +9,28 @@ export default function App() {
         <header className="App-header">
           <img src={logo} className="img-fluid App-logo" alt="logo" />
         </header>
-        <main>
-          <Dictionary />
-        </main>
+        <Dictionary defaultKeyword="concert" />
         <footer className='App-footer'>
-          <small>Coded by SheCodes</small>
+          <small>
+            This project was coded by Sarah VanTilburg and is open-sourced on{" "}
+            <a 
+              href='https://github.com/SarahVanT/dictionary-project'
+              target='_blank'
+              rel="noreferrer"
+            >
+              Github
+            </a>{" "}
+            and hosted on{" "}
+            <a
+              href='https://gregarious-biscochitos-b9c1ed.netlify.app/'
+              target='_blank'
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+          </small>
         </footer>
       </div>
-      
     </div>
   );
 }
