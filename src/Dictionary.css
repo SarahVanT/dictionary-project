@@ -37,3 +37,18 @@
 	margin-top: 15px;
 	display: block;
 }
+
+.Dictionary .error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.Dictionary .error {
+    border: 2px solid red;
+}
+  
+  
+  
+  
+  

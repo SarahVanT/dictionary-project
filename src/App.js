@@ -1,4 +1,4 @@
-import logo from './undraw_sharing_knowledge_03vp.svg';
+import logo from './Booklover.svg';
 import './App.css';
 import Dictionary from "./Dictionary";
 
@@ -9,7 +9,7 @@ export default function App() {
         <header className="App-header">
           <img src={logo} className="img-fluid App-logo" alt="logo" />
         </header>
-        <Dictionary defaultKeyword="concert" />
+        <Dictionary defaultKeyword="Coding" />
         <footer className='App-footer'>
           <small>
             This project was coded by Sarah VanTilburg and is open-sourced on{" "}
