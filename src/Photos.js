@@ -9,7 +9,7 @@ console.log(props.photos);
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4" key={index}>
+              <div className="col-lg-4 col-md-6" key={index}>
                 <a
                   href={photo.src.original}
                   target="_blank"

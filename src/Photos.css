@@ -2,3 +2,15 @@
     margin: 10px 0;
     border-radius: 4px;
 }
+
+.Photos .col-lg-4,
+.Photos .col-md-6 {
+/* Add a smooth transition */
+  transition: transform 0.3s; 
+}
+
+.Photos .col-lg-4:hover,
+.Photos .col-md-6:hover {
+/* Increase the size of the photo on hover */
+  transform: scale(1.5); 
+}

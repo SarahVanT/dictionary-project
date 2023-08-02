@@ -19,15 +19,19 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
+  // Function to handle API response for word definition
   function handleResponse(response) {
     // Check if the response contains a valid definition
     if (response.data && response.data.word) {
       setDefinition(response.data);
-      setError(null); // Reset error if there was a previous error
+       // Reset error if there was a previous error
+      setError(null);
     } else {
-      setDefinition(null); // Reset definition if the response doesn't contain a valid definition
-      setError("Word not found in the dictionary."); // Set the error message
-    }
+      // Reset definition if the response doesn't contain a valid definition
+      setDefinition(null);
+      // Set the error message
+      setError("Word not found in the dictionary."); 
+    };
   
     let apiKey = "tc77416a9a6oe00ff484244bdff2d3b1";
     let apiUrl = `https://api.shecodes.io/images/v1/search?query=${response.data.word}&key=${apiKey}`;
@@ -61,8 +65,14 @@ export default function Dictionary(props) {
 
   // Function to handle changes in the search input
   function handleKeywordChange(event) {
-    setError(null); // Reset the error state when the user types in the search input
+    // Reset the error state when the user types in the search input
+    setError(null); 
     setKeyword(event.target.value);
+
+    // Clear the photos state when the search input is empty
+    if (!event.target.value) {
+      setPhotos([]); 
+    }
   }
 
   if (loaded) {
