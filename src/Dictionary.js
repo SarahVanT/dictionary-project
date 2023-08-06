@@ -5,7 +5,7 @@ import Result from "./Result";
 import Photos from "./Photos";
 import "./Dictionary.css";
 
-// Functional component 'Dictionary'
+// Defining the 'Dictionary' component
 export default function Dictionary(props) {
   // State variables using the 'useState' hook 
   const [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -91,10 +91,12 @@ export default function Dictionary(props) {
                 className={`form-control search-input ${error ? "error" : ""}`}
                 onChange={handleKeywordChange}
               />
+              <div className="error-message">
+                <i className="fas fa-exclamation-circle"></i> {error}
+              </div>
             </form>
-            <small className="hint">i.e. paris, wine, yoga, coding</small>
+            <p className="hint">Suggested words to look up: paris, yoga, coding</p>
           </section>
-          <div className="error-message">{error}</div>
         </div>
       );
     } else {
@@ -113,7 +115,7 @@ export default function Dictionary(props) {
                 onChange={handleKeywordChange}
               />
             </form>
-            <small className="hint">i.e. paris, wine, yoga, coding</small>
+            <p className="hint">Suggested words to look up: paris, yoga, coding</p>
           </section>
           <Result definition={definition} />
           <Photos photos={photos} />

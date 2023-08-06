@@ -1,6 +1,10 @@
 .Synonyms {
     margin: 30px 0 0;
 }
+
+.Synonyms h3{
+    font-size: 25px;
+}
   
 .Synonyms ul {
     padding: 0;
@@ -11,5 +15,5 @@
     list-style: none;
     display: inline-block;
     margin-right: 15px;
-    font-size: 14px;
+    font-size: 18px;
 }

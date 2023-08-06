@@ -1,3 +1,9 @@
+body{
+  background-image: linear-gradient(to bottom, #fdf7ff, #f2e5f7, #e8d4ef, #ddc2e8, #d2b1e0);
+  background-attachment: fixed;
+  color: #212529;
+}
+
 .App {
   padding: 60px 0 100px;
   max-width: 960px;
@@ -13,7 +19,7 @@
 }
 
 .App-logo{
-  max-width: 300px;
+  max-width: 500px;
   display: block;
   margin: 30px auto;
 }

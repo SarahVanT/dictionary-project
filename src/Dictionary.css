@@ -34,13 +34,13 @@
 }
 
 .Dictionary .hint {
-	margin-top: 15px;
+	margin-top: 18px;
 	display: block;
 }
 
 .Dictionary .error-message {
     color: red;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
